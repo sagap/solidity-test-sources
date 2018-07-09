@@ -48,7 +48,7 @@ contract WinnerTakesAll {
         return false;
     }
     function supportProject(address addr) payable public returns (bool success) {
-        if (msg.value <= 0) {
+        if (!(msg.value > 0)) {
             throw;
         }
         if (now > deadlineCampaign || now <= deadlineProjects) {
