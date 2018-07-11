@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Yarn lock files
+yarn.lock
+
+# coverage
+coverage/
+coverageEnv/
+coverage.json
+allFiredEvents
+scTopics
+
+# truffle build artifacts
+build/
+abis.json
