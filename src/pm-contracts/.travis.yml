@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+- 'node'
+- '9'
+- '8'
+before_install:
+- npm install -g npm greenkeeper-lockfile@1
+before_script: greenkeeper-lockfile-update
+script:
+- travis_wait 60 npm test
+after_script: greenkeeper-lockfile-upload
+before_deploy:
+- npm-prepublish --verbose --lax
+deploy:
+  provider: npm
+  email: alanlu1023@gmail.com
+  api_key: $NPM_TOKEN
+  on:
+    all_branches: true
+    tags: true
+    node: '8'
+    repo: gnosis/gnosis-contracts
