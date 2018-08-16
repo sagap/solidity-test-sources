@@ -1,0 +1,43 @@
+{
+  "name": "kleros-interaction",
+  "version": "0.0.21",
+  "description": "Smart contracts interacting with Kleros.",
+  "main": "index.js",
+  "files": [
+    "contracts",
+    "build"
+  ],
+  "scripts": {
+    "test": "scripts/test.sh",
+    "coverage": "scripts/coverage.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kleros/kleros-interaction.git"
+  },
+  "keywords": [
+    "kleros",
+    "random",
+    "arbitration",
+    "arbitrable",
+    "arbitrator",
+    "rng"
+  ],
+  "author": "Kleros",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kleros/kleros-interaction/issues"
+  },
+  "homepage": "https://github.com/kleros/kleros-interaction#readme",
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "ganache-cli": "^6.1.6",
+    "solidity-coverage": "^0.5.7",
+    "truffle": "^4.1.13",
+    "web3": "^1.0.0-beta.22"
+  },
+  "dependencies": {
+    "minimetoken": "^0.2.0",
+    "zeppelin-solidity": "^1.7.0"
+  }
+}
